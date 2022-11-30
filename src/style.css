@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+body{ 
+    background-size: cover;
+    background-color: rgb(244, 162, 91);
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contenedor-principal{
+    width: 100%;
+    min-height: 2000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Título{
+    text-align:center;
+    font-size: 100px;
+    color: gold;
+    padding-top: 30px;
+    padding-bottom:30px ;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke: 5px rgb(32, 62, 230);
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tarjeta{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    font-family: 'Allerta Stencil', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(255, 41, 41);
+    border: 5px solid black;
+    border-radius: 20px;  
+}
+
+.nombrePokemon{
+    color:black ;
+    font-size: 18px;
+    font-family: 'Allerta Stencil', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 90%;
+    height: 80%;
+    padding: 5px;
+}
+
+.parte-posterior{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;  
+    z-index: 1;
+}
+
+.parte-frontal{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+
+    z-index: 0;
+    position: absolute;
+}
+
+.mensaje-ganador{
+    text-align:center;
+    font-size: 2em;
+    color: gold;
+    padding-top: 30px;
+    padding-bottom:30px ;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke: 5px rgb(32, 62, 230);
+}
+
+.clikeado{
+    background-image:url(./elementos/Tarjeta.png) ; 
+}
